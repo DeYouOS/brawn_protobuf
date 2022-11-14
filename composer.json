@@ -1,0 +1,21 @@
+{
+  "name": "brawn/protobuf",
+  "type": "library",
+  "description": "proto library for PHP",
+  "keywords": ["proto"],
+  "homepage": "https://developers.google.com/protocol-buffers/",
+  "license": "BSD-3-Clause",
+  "require": {
+    "php": ">=7.0.0",
+    "google/protobuf": "^3.21"
+  },
+  "suggest": {
+    "ext-bcmath": "Need to support JSON deserialization"
+  },
+  "autoload": {
+    "psr-4": {
+      "Brawn\\Protobuf\\": "src/php/Brawn/Protobuf",
+      "GPBMetadata\\": "src/php/GPBMetadata"
+    }
+  }
+}
