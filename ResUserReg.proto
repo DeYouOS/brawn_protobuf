@@ -21,7 +21,7 @@ package Brawn.Protobuf;
 option java_package = "com.android.brawn";
 option java_outer_classname = "ResUserRegProto";
  
-message ReqUserReg {
+message ResUserReg {
  
    // 卡密
    string reg_card = 1;
