@@ -17,25 +17,19 @@
 syntax = "proto3";
 
 package Brawn.Protobuf;
-
+  
 option java_package = "com.android.brawn";
-option java_outer_classname = "ProtoLoginInfo";
+option java_outer_classname = "ReqUserRegProto";
+  
+message ReqUserReg {
 
-message LoginInfo {
+    // 卡密
+    bool isSuccess = 1;
 
-  // Package Name
-  string name = 1;
+    // 机器码
+    string errMsg = 2;
 
-  // Version Number
-  int64 version = 2;
-
-  // Pre Install Hook
-  string preInstallHook = 3;
-
-  // Post Install Hook
-  string postInstallHook = 4;
-
-  // Version Name
-  string versionName = 5;
+    // 机器码
+    string token = 3;
 
 }
